@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite" parallel = "false">
+    <test name="test n1 fail">
+        <classes>
+            <class name="ExampleTestNG">
+                <parameter name="name" value="joja"/>
+                <parameter name="lastName" value="jojalast"/>
+                <parameter name="pas" value="123"/>
+                <parameter name="num" value="210"></parameter>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test n2 fail">
+        <parameter name="name" value="VOVCHIK2005"/>
+        <parameter name="pas" value="CoolPass"/>
+        <parameter name="num" value="-21"/>
+        <classes>
+            <class name="ExampleTestNG"/>
+        </classes>
+    </test>
+
+    <test name="test n3 all success">
+        <classes>
+            <class name="ExampleTestNG">
+                <parameter name="name" value="VOVCHIK2005"/>
+                <parameter name="pas" value="CoolPass"/>
+                <parameter name="num" value="21"/>
+                <methods>
+                    <exclude name="personsCheckFromDataProvider"/>
+                </methods>
+            </class>
+            <class name="ExampleSelenide"/>
+            <class name="ExampleSLF4J"/>
+        </classes>
+    </test>
+</suite>
