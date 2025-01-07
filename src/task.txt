@@ -1,0 +1,10 @@
+С помощью JDBC реализовать создание БД, наполнение ее данными и выборку и
+изменение этих данных. В качестве субд выбрать любую удобную для разворачивания на 
+локальной машине (например PostgreSQL).
+NameDB = PostgreSQL17
+host = localhost
+port = 5432
+maintanance DB = postgres
+username = postgres
+password = PasJava17
+127.0.0.1
