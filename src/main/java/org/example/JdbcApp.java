@@ -283,7 +283,7 @@ public class JdbcApp {
 
     /**
      * Очистка таблицы
-     * @throws SQLException
+     * @throws SQLException Очистка не получилась
      */
     private static void clearTableStudent() throws SQLException {
         statement.executeUpdate("DELETE FROM student;");
